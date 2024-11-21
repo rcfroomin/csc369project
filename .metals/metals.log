@@ -1,0 +1,176 @@
+2024.11.21 11:50:05 INFO  Started: Metals version 1.4.1 in folders '/Users/neeharaavi/Desktop/csc369/csc369project' for client Visual Studio Code 1.95.3.
+2024.11.21 11:50:05 WARN  Flyway upgrade recommended: H2 2.3.232 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.224.
+2024.11.21 11:50:06 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/build.sbt. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:50:08 INFO  running '/opt/homebrew/bin/sbt -Dbloop.export-jar-classifiers=sources bloopInstall'
+2024.11.21 11:50:09 WARN  no build target for: /Users/neeharaavi/Desktop/csc369/csc369project/project/metals.sbt
+2024.11.21 11:50:09 WARN  no build target for: /Users/neeharaavi/Desktop/csc369/csc369project/project/project/metals.sbt
+2024.11.21 11:50:09 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/project/project/metals.sbt. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:50:09 WARN  Could not find semantic tokens for: file:///Users/neeharaavi/Desktop/csc369/csc369project/build.sbt
+2024.11.21 11:50:09 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/project/metals.sbt. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:50:11 INFO  [info] Updated file /Users/neeharaavi/Desktop/csc369/csc369project/project/build.properties: set sbt.version to 1.10.5
+2024.11.21 11:50:11 INFO  [info] welcome to sbt 1.10.5 (Oracle Corporation Java 20)
+2024.11.21 11:50:11 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/build.sbt. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:50:11 WARN  Could not find semantic tokens for: file:///Users/neeharaavi/Desktop/csc369/csc369project/build.sbt
+2024.11.21 11:50:13 INFO  [info] loading settings for project csc369project-build-build from metals.sbt ...
+2024.11.21 11:50:14 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/project/plugins.sbt. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:50:14 WARN  no build target for: /Users/neeharaavi/Desktop/csc369/csc369project/project/plugins.sbt
+2024.11.21 11:50:14 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/build.sbt. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:50:14 WARN  Could not find semantic tokens for: file:///Users/neeharaavi/Desktop/csc369/csc369project/build.sbt
+2024.11.21 11:50:13 INFO  [info] loading project definition from /Users/neeharaavi/Desktop/csc369/csc369project/project/project
+2024.11.21 11:50:16 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/build.sbt. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:50:16 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/build.sbt. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:50:16 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/build.sbt. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:50:17 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/build.sbt. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:50:17 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/build.sbt. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:50:17 INFO  [info] loading settings for project csc369project-build from metals.sbt,plugins.sbt ...
+2024.11.21 11:50:17 INFO  [info] loading project definition from /Users/neeharaavi/Desktop/csc369/csc369project/project
+2024.11.21 11:50:17 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/build.sbt. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:50:17 WARN  Could not find semantic tokens for: file:///Users/neeharaavi/Desktop/csc369/csc369project/build.sbt
+2024.11.21 11:50:21 INFO  [success] Generated .bloop/csc369project-build.json
+2024.11.21 11:50:21 INFO  [success] Total time: 4 s, completed Nov 21, 2024, 11:50:21 AM
+2024.11.21 11:50:23 INFO  [info] loading settings for project csc369project from build.sbt ...
+2024.11.21 11:50:23 INFO  [info] set current project to EquipmentFailurePrediction (in build file:/Users/neeharaavi/Desktop/csc369/csc369project/)
+2024.11.21 11:50:31 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/project/plugins.sbt. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:50:31 WARN  Could not find semantic tokens for: file:///Users/neeharaavi/Desktop/csc369/csc369project/project/plugins.sbt
+2024.11.21 11:50:31 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/project/plugins.sbt. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:50:32 WARN  no build target for: /Users/neeharaavi/Desktop/csc369/csc369project/project/plugins.sbt
+2024.11.21 11:50:32 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/project/plugins.sbt. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:50:32 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/project/plugins.sbt. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:50:32 WARN  Could not find semantic tokens for: file:///Users/neeharaavi/Desktop/csc369/csc369project/project/plugins.sbt
+2024.11.21 11:50:32 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/project/plugins.sbt. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:50:32 WARN  Could not find semantic tokens for: file:///Users/neeharaavi/Desktop/csc369/csc369project/project/plugins.sbt
+2024.11.21 11:50:41 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/build.sbt. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:50:41 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/build.sbt. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:50:42 WARN  no build target for: /Users/neeharaavi/Desktop/csc369/csc369project/build.sbt
+2024.11.21 11:50:42 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/build.sbt. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:50:42 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/build.sbt. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:50:42 WARN  Could not find semantic tokens for: file:///Users/neeharaavi/Desktop/csc369/csc369project/build.sbt
+2024.11.21 11:50:42 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/build.sbt. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:50:42 WARN  Could not find semantic tokens for: file:///Users/neeharaavi/Desktop/csc369/csc369project/build.sbt
+2024.11.21 11:50:43 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/build.sbt. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:50:43 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/build.sbt. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:50:43 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/build.sbt. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:50:43 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/build.sbt. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:50:44 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/build.sbt. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:50:44 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/build.sbt. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:50:46 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/Main.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:50:46 WARN  Could not find semantic tokens for: file:///Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/Main.scala
+2024.11.21 11:50:50 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/Main.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:50:50 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:50:50 WARN  Could not find semantic tokens for: file:///Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala
+2024.11.21 11:50:52 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:50:52 WARN  no build target for: /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala
+2024.11.21 11:50:53 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:50:53 WARN  Could not find semantic tokens for: file:///Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala
+2024.11.21 11:50:56 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:50:57 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:50:56 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:50:58 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:50:58 WARN  no build target for: /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala
+2024.11.21 11:50:58 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:50:58 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:50:58 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:50:58 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:50:59 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:50:59 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:50:59 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:50:59 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:50:59 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+Nov 21, 2024 11:51:00 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 97
+2024.11.21 11:50:59 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+Nov 21, 2024 11:51:00 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 98
+2024.11.21 11:50:59 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+Nov 21, 2024 11:51:00 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 99
+2024.11.21 11:51:00 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:50:59 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:50:59 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:51:00 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:51:00 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:51:00 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:51:00 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:51:00 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:51:00 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:51:00 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:51:00 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:51:00 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:51:01 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:51:01 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:51:01 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:51:02 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:51:01 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:51:01 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:51:02 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:51:01 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:51:01 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:51:01 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:51:02 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:51:02 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:51:02 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:51:03 INFO  [success] Generated .bloop/csc369project-test.json
+2024.11.21 11:51:03 INFO  [success] Generated .bloop/csc369project.json
+2024.11.21 11:51:03 INFO  [success] Total time: 39 s, completed Nov 21, 2024, 11:51:03 AM
+2024.11.21 11:51:02 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:51:03 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:51:03 INFO  time: ran 'sbt bloopInstall' in 54s
+2024.11.21 11:51:03 INFO  Attempting to connect to the build server...
+2024.11.21 11:51:02 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:51:03 INFO  Found a Bloop server running
+2024.11.21 11:51:02 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:51:02 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:51:02 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:51:03 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:51:02 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:51:02 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:51:03 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/neeharaavi/Desktop/csc369/csc369project/.metals/bsp.trace.json or /Users/neeharaavi/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.11.21 11:51:02 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:51:02 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:51:03 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:51:03 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:51:03 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:51:03 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:51:04 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:51:03 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:51:03 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:51:03 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:51:04 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:51:04 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:51:04 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:51:04 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:51:05 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:51:04 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:51:04 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:51:04 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:51:04 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:51:04 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:51:04 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:51:05 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:51:04 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:51:05 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:51:06 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:51:06 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:51:06 WARN  no build target for: /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala
+2024.11.21 11:51:06 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:51:05 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/src/main/scala/EquipmentFailurePrediction.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.21 11:51:07 INFO  Attempting to connect to the build server...
+2024.11.21 11:51:07 INFO  Found a Bloop server running
+2024.11.21 11:51:07 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/neeharaavi/Desktop/csc369/csc369project/project/.metals/bsp.trace.json or /Users/neeharaavi/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.11.21 11:51:07 INFO  time: Connected to build server in 4.5s
+2024.11.21 11:51:07 INFO  Connected to Build server: Bloop v2.0.5
+2024.11.21 11:51:07 INFO  running doctor check
+2024.11.21 11:51:07 INFO  java targets: csc369project, csc369project-build, csc369project-test
+2024.11.21 11:51:14 WARN  Flyway upgrade recommended: H2 2.3.232 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.224.
+2024.11.21 11:51:36 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/project/project/metals.sbt. Using presentation compiler with project's scala-library version: 2.13.12
+2024.11.21 11:51:38 WARN  no build target for: /Users/neeharaavi/Desktop/csc369/csc369project/project/project/metals.sbt
+2024.11.21 11:52:02 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/project/metals.sbt. Using presentation compiler with project's scala-library version: 2.13.12
+2024.11.21 11:52:02 WARN  no build target for: /Users/neeharaavi/Desktop/csc369/csc369project/project/metals.sbt
+2024.11.21 11:52:05 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/project/plugins.sbt. Using presentation compiler with project's scala-library version: 2.13.12
+2024.11.21 11:52:05 WARN  no build target for: /Users/neeharaavi/Desktop/csc369/csc369project/project/plugins.sbt
+2024.11.21 11:52:20 INFO  time: indexed workspace in 1m13s
+2024.11.21 11:52:22 WARN  no build target for: /Users/neeharaavi/Desktop/csc369/csc369project/project/plugins.sbt
+2024.11.21 11:52:23 INFO  compiling csc369project (1 scala source)
+Nov 21, 2024 11:52:25 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 218
+2024.11.21 11:52:29 INFO  time: compiled csc369project in 5.71s

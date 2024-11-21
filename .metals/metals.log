@@ -174,3 +174,7 @@ WARNING: Unmatched cancel notification for request id 99
 Nov 21, 2024 11:52:25 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
 WARNING: Unmatched cancel notification for request id 218
 2024.11.21 11:52:29 INFO  time: compiled csc369project in 5.71s
+2024.11.21 11:57:06 INFO  no build target found for /Users/neeharaavi/Desktop/csc369/csc369project/project/plugins.sbt. Using presentation compiler with project's scala-library version: 2.13.12
+2024.11.21 11:57:23 INFO  time: code lens generation in 2.58s
+2024.11.21 11:57:24 INFO  compiling csc369project (1 scala source)
+2024.11.21 11:57:26 INFO  time: compiled csc369project in 1.58s

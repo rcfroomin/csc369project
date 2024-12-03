@@ -18,10 +18,12 @@ object NaiveBayesTrainer {
     val classCounts = trainingData.groupBy(_._2).mapValues(_.length).toMap
     val totalSamples = trainingData.length
     val numFeatures = trainingData.head._1.length
+    val lambda = 1.0 // Define lambda (e.g., 1 / t)
+    val m_i = 3      // Number of possible values for a feature
 
     // Calculate class probabilities with Laplace smoothing
     val classProbabilities = classCounts.map { case (label, count) =>
-      label -> ((count + 1).toDouble / (totalSamples + classCounts.size))
+      label -> ((count + lambda) / (totalSamples + lambda * classCounts.size))
     }.toMap
 
     // Calculate feature probabilities per class with Laplace smoothing
@@ -36,8 +38,8 @@ object NaiveBayesTrainer {
     }.toMap
 
     val featureProbabilities = featureSums.map { case (label, sums) =>
-      val totalFeatures = classCounts(label) + numFeatures // Laplace smoothing
-      label -> sums.map(sum => (sum + 1) / totalFeatures)
+      val n_j = classCounts(label) // Total count for the class
+      label -> sums.map(n_ij => (n_ij + lambda) / (n_j + lambda * m_i))
     }.toMap
 
     Model(classProbabilities, featureProbabilities)

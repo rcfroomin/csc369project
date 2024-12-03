@@ -17,6 +17,11 @@ object Main {
       .master("local[*]") // Use local mode with all cores
       .getOrCreate()
   val sc = spark.sparkContext
+  sc.setLogLevel("WARN")
+  Logger.getLogger("org").setLevel(Level.OFF)
+  Logger.getLogger("akka").setLevel(Level.OFF)
+    
+
 
   var sensor_range = (List (("s_2", (642.0, 643.5)),
                           ("s_3", (1580.0, 1600.0)),
@@ -36,27 +41,18 @@ object Main {
                           ("RUL", (68.0, 137.0))))
 
   def main(args: Array[String]): Unit = {
-    
 
-    Logger.getLogger("org").setLevel(Level.OFF)
-    Logger.getLogger("akka").setLevel(Level.OFF)
 
     var df = spark.read
       .option("header", "true")
       .option("inferSchema", "true")
       .csv("train_data.csv")
 
-    //runStats(df)
+    runStats(df)
     prob_with_laplace(data_classification(df))
     //
     
 
-    
-  
-
-    
-    
-  
 
     spark.stop()
   }
@@ -131,14 +127,13 @@ def data_classification(df : DataFrame): DataFrame = {
     val classificationColumns = df.columns.filter(_.startsWith("s_"))
 
     val colCounts = classificationColumns.map { colName =>
-      println(colName)
       val counts = df.groupBy(colName).count().collect()
       val countsMap = counts.map(row => (row.getString(0), row.getLong(1))).toMap
       (colName, countsMap)}
 
     colCounts.foreach{line => println(line)}
 
-    val lambda = 1 / counts
+    val lambda = 1 / size
     val m_i = 3 
 
     // n_ij = sensor and result cnt

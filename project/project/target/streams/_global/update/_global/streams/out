@@ -1,3 +1,3 @@
-[debug] not up to date. inChanged = true, force = false
-[debug] Updating ProjectRef(uri("file:/Users/edinhdawg/Documents/CSC%20369/csc369project/project/project/"), "csc369project-build-build")...
-[debug] Done updating ProjectRef(uri("file:/Users/edinhdawg/Documents/CSC%20369/csc369project/project/project/"), "csc369project-build-build")
+[0m[[0m[0mdebug[0m] [0m[0mnot up to date. inChanged = false, force = false[0m
+[0m[[0m[0mdebug[0m] [0m[0mUpdating ProjectRef(uri("file:/Users/riley/csc369/csc369project/project/project/"), "csc369project-build-build")...[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone updating ProjectRef(uri("file:/Users/riley/csc369/csc369project/project/project/"), "csc369project-build-build")[0m

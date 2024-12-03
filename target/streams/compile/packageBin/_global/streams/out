@@ -1,1 +1,7 @@
-[0m[[0m[0mdebug[0m] [0m[0mJar uptodate: /Users/edinhdawg/Documents/CSC 369/csc369project/target/scala-2.13/equipmentfailureprediction_2.13-1.0.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /Users/riley/csc369/csc369project/target/scala-2.13/equipmentfailureprediction_2.13-1.0.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/riley/csc369/csc369project/target/scala-2.13/classes/Main$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/riley/csc369/csc369project/target/scala-2.13/classes/Main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m

@@ -18,21 +18,22 @@ object Main {
       .getOrCreate()
   val sc = spark.sparkContext
 
-  var sensor_range = (List (("s_2", (642.0, 644.0)),
-                          ("s_3", (1570.0, 1600.0)),
+  var sensor_range = (List (("s_2", (642.0, 643.5)),
+                          ("s_3", (1580.0, 1600.0)),
                           ("s_4", (1390.0, 1420.0)),
                           ("s_6", (21.54, 21.60)),
                           ("s_7", (555.0, 565.0)),
                           ("s_8", (2387.25, 2388.5)),
-                          ("s_9", (9050.0, 9175.0)),
+                          ("s_9", (9050.0, 9170.0)),
                           ("s_11", (47.25, 48.0)),
                           ("s_12", (520.0, 532.5)),
                           ("s_13", (2387.5, 2388.5)),
                           ("s_14", (8125.0, 8200.0)),
-                          ("s_15", (8.2, 8.5)),
+                          ("s_15", (8.3, 8.5)),
                           ("s_17", (390.0, 394.0)),
-                          ("s_20", (38.25, 39.25)),
-                          ("s_21", (23.2, 23.6))))
+                          ("s_20", (38.75, 39.25)),
+                          ("s_21", (23.2, 23.6)), 
+                          ("RUL", (68.0, 137.0))))
 
   def main(args: Array[String]): Unit = {
     
@@ -44,14 +45,48 @@ object Main {
       .option("header", "true")
       .option("inferSchema", "true")
       .csv("train_data.csv")
-    //prob_with_laplace(df)
 
-   
+    //runStats(df)
+    prob_with_laplace(data_classification(df))
+    //
     
-    //println(give_range("s_2", 10))
 
-    //sensor_range.collect.foreach{line => println(line)}
+    
+  
 
+    
+    
+  
+
+    spark.stop()
+  }
+
+  //given the train_data.csv dataframe, return the min, max, and mean of every column except unit_number and time_cycle
+    def runStats(df: DataFrame): Unit = {
+      //drop the first two columns
+      val filteredColumns = df.drop("unit_number", "time_cycles")
+      val columnNames = filteredColumns.columns // Renaming the variable to avoid conflict
+
+      // Create a new DataFrame by applying the transformation
+      val transformedDF = columnNames.foldLeft(filteredColumns) { (tempDF, colName) =>
+        tempDF.withColumn(colName, col(colName).cast("Double"))
+      }
+
+      //transformedDF.printSchema()
+
+      // Prepare column statistics expressions
+      val statsExprs = columnNames.flatMap(colName => Seq(
+        min(col(colName)).alias(s"${colName}_min"),
+        max(col(colName)).alias(s"${colName}_max"),
+        mean(col(colName)).alias(s"${colName}_mean")
+      ))
+
+      val statsDF = transformedDF.select(statsExprs: _*)
+      //statsDF.coalesce(1).write.option("header", "true").csv("statistics.csv")
+      statsDF.show()
+  }
+
+def data_classification(df : DataFrame): DataFrame = {
     val rangeMap = sensor_range.toMap
 
     // UDF to classify values based on ranges
@@ -84,72 +119,37 @@ object Main {
       }
     }
 
-    // Show the result
-    classifiedDf.show()
+    val classificationColumns = classifiedDf.columns.filter(_.endsWith("_classification")) //gets the column names
+    val resultDf = classifiedDf.select(classificationColumns.map(col): _*) //selects only those column names 
+    resultDf.show()
+    return resultDf
 
-    // Show the results
-    // resultDf.show()
-
-  
-
-    //runStats(df)
-    
-  
-
-    spark.stop()
-  }
-
-  //given the train_data.csv dataframe, return the min, max, and mean of every column except unit_number and time_cycle
-   def runStats(df: DataFrame): Unit = {
-    //drop the first two columns
-    val filteredColumns = df.drop("unit_number", "time_cycles")
-    val columnNames = filteredColumns.columns // Renaming the variable to avoid conflict
-
-    // Create a new DataFrame by applying the transformation
-    val transformedDF = columnNames.foldLeft(filteredColumns) { (tempDF, colName) =>
-      tempDF.withColumn(colName, col(colName).cast("Double"))
-    }
-
-    //transformedDF.printSchema()
-
-    // Prepare column statistics expressions
-    val statsExprs = columnNames.flatMap(colName => Seq(
-      min(col(colName)).alias(s"${colName}_min"),
-      max(col(colName)).alias(s"${colName}_max"),
-      mean(col(colName)).alias(s"${colName}_mean")
-    ))
-
-    val statsDF = transformedDF.select(statsExprs: _*)
-    //statsDF.coalesce(1).write.option("header", "true").csv("statistics.csv")
-    statsDF.show()
-  }
-
-  /* def give_range(sensor : String, value : Int) : String = {
-    val rangeOption = sensor_range
-      .filter(_._1 == sensor) // Filter the RDD to find the matching sensor
-      .collect() // Bring the result back to the driver as an Array
-      .headOption // Safely get the first element if it exists
-      .map { case (_, (lower, upper)) => (lower.asInstanceOf[Int], upper.asInstanceOf[Int]) }
-
-    
-    // Check where the value lies
-      rangeOption match {
-        case Some((lower, upper)) =>
-          if (value < lower) "low"
-          else if (value >= lower && value <= upper) "mid"
-          else "high"
-        case None => 
-          s"Sensor $sensor not found"
-      }
   }
 
   def prob_with_laplace(df : DataFrame) : Unit = {
     val size = df.columns.size
-    val filteredColumns = df.drop("s_1", "s_5", "s_10", "s_16", "s_18", "s_19")
-    filteredColumns.show()
+    val classificationColumns = df.columns.filter(_.startsWith("s_"))
+
+    val colCounts = classificationColumns.map { colName =>
+      println(colName)
+      val counts = df.groupBy(colName).count().collect()
+      val countsMap = counts.map(row => (row.getString(0), row.getLong(1))).toMap
+      (colName, countsMap)}
+
+    colCounts.foreach{line => println(line)}
+
+    val lambda = 1 / counts
+    val m_i = 3 
+
+    // n_ij = sensor and result cnt
+    // lambda = 1 / t
+    // n_j = result_cnt
+    // m_i = 3
+
+    // p = (n_ij + lambda) / (n_j + lambda * m_i)
 
 
-  } */
+  } 
 
 
 

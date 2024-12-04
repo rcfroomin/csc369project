@@ -1,4 +1,4 @@
-import org.apache.spark.sql.{SparkSession, DataFrame}
+import org.apache.spark.sql.{DataFrame, Row, SparkSession}
 import org.apache.spark.sql.functions._
 
 import org.apache.spark.SparkContext._
@@ -8,6 +8,8 @@ import org.apache.spark.rdd._
 import org.apache.log4j.Logger
 import org.apache.log4j.Level
 import scala.collection._
+import org.apache.spark.sql.types._
+import scala.collection.Seq
 
 
 
@@ -49,7 +51,7 @@ object Main {
       .csv("train_data.csv")
 
     runStats(df)
-    prob_with_laplace(data_classification(df))
+    prob_with_laplace(data_classification(df), "probabilities.csv")
     //
     
 
@@ -122,29 +124,44 @@ def data_classification(df : DataFrame): DataFrame = {
 
   }
 
-  def prob_with_laplace(df : DataFrame) : Unit = {
-    val size = df.columns.size
+def prob_with_laplace(df: DataFrame, outputPath: String): Unit = {
+    // Define Laplace smoothing parameters
+    val lambda = 1.0 / df.columns.size // Lambda based on the number of columns
+    val m_i = 3 // Assume 3 possible outcomes ("low", "mid", "high")
+    
+    // Sensor columns starting with "s_"
     val classificationColumns = df.columns.filter(_.startsWith("s_"))
 
-    val colCounts = classificationColumns.map { colName =>
-      val counts = df.groupBy(colName).count().collect()
-      val countsMap = counts.map(row => (row.getString(0), row.getLong(1))).toMap
-      (colName, countsMap)}
+    // Process each sensor column and calculate probabilities
+    val probabilities = classificationColumns.flatMap { colName =>
+      // Group by classification and count occurrences
+      val countsDF = df.groupBy(col(colName)).count()
+      
+      // Total count for the sensor column
+      val n_j = countsDF.agg(sum("count")).collect()(0).getLong(0)
 
-    colCounts.foreach{line => println(line)}
+      
+      // Calculate probabilities
+      countsDF.collect().map { row =>
+        val classification = row.getString(0) // Classification value
+        val n_ij = row.getLong(1)             // Count for this classification
+        val probability = (n_ij + lambda) / (n_j + lambda * m_i) // Laplace smoothing
+        (colName, classification, probability)
+      }
+    }
 
-    val lambda = 1 / size
-    val m_i = 3 
+   
+    import spark.implicits._
+    val probabilitiesDF = probabilities.toSeq.toDF("Sensor", "Classification", "Probability")
 
-    // n_ij = sensor and result cnt
-    // lambda = 1 / t
-    // n_j = result_cnt
-    // m_i = 3
+  // Write to CSV
+  probabilitiesDF.coalesce(1) // Optional: ensure a single output file
+    .write
+    .option("header", "true") // Include header row
+    .csv(outputPath)
 
-    // p = (n_ij + lambda) / (n_j + lambda * m_i)
+}
 
-
-  } 
 
 
 

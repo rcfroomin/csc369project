@@ -8,4 +8,7 @@ Visualizations - Riley
 Ran min, max, mean operators on the dataset - Emi 
 Created Sensor Ranges for each sensor - Emi 
 Classified the data using the sensor range as low, mid, or high - Emi 
-Exported the probability data to a csv file - Emi 
+Exported the probability data to a csv file - Emi
+Wrote probability calculation code - Neeha
+Implemented Laplace smoothing - Neeha
+Wrote functions for model accuracy statistics - Neeha
